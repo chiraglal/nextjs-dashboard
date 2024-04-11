@@ -30,8 +30,7 @@ const orders = () => {
                                         <p className='text-sm text-gray-800'>{order.name.first}</p>
                                     </div>
                                 </div>
-                                <p>
-
+                                <p className='sm:text-left text-right'>
                                     <span className={
                                         order.status == 'Completed' ? 'bg-blue-200 rounded-lg p-2'
                                             : order.status == 'Processing' ? 'bg-green-200 rounded-lg p-2'
@@ -43,7 +42,7 @@ const orders = () => {
                                 <p className='hidden md:flex'>{order.date}</p>
                                 <div className='flex justify-between'>
                                     <p className='sm:flex hidden'>{order.method}</p>
-                                    <BsThreeDotsVertical />
+                                    <BsThreeDotsVertical className='sm:flex hidden' />
                                 </div>
                             </li>
                         ))}
