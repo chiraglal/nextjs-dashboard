@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaShoppingBag } from 'react-icons/fa'
-import { data } from '../../data/data'
+import { data } from '../data/data'
 const RecentOrders = () => {
     return (
         <div className='w-full col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white overflow-auto'>
